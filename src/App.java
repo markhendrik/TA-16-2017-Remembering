@@ -18,9 +18,14 @@ public class App {
 	
 	//generateHtmlElement(“h1”, “This is a Heading”) -> “<h1>This is a Heading</h1>”
 	private String generateHtmlElement(String tag, String value) {
+		//1. variant
 		//return "<" + tag + ">" + value + "</" + tag + ">";
-		String htmlElementTemp = String.format("<%1$s>%2$s</%1$s>", tag, value);
-		System.out.println(htmlElementTemp);
+		
+		//2. variant
+		//String htmlElement = String.format("<%1$s>%2$s</%1$s>", tag, value);
+		
+		
+		//3.variant
 		StringBuilder htmlElement = new StringBuilder("<");
 		
 		return htmlElement
