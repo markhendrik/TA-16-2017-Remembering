@@ -5,7 +5,7 @@ public class App {
 		App appObject = new App();
 			
 		System.out.println("sayHello() result: " + appObject.sayHello("David") + "\n");
-		System.out.println("Järgmise meetodi resultaat");
+		
 		System.out.println("generateHtmlElement() result: " + appObject.generateHtmlElement("h4", "Väiksem pealkiri") );
 	}
 	
