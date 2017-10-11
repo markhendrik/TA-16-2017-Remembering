@@ -12,7 +12,7 @@ public class App {
 		double[] temperatures = { 20, 15, 16, 10, 14, 11, 13 };
 		System.out.println("keskmine temperatuur: " + appObject.avgTemp(temperatures));
 		
-		System.out.println("otsitav number on: " + appObject.intToWord(33));
+		System.out.println("otsitav number on: " + appObject.intToWord(3));
 
 	}
 
@@ -67,9 +67,9 @@ public class App {
 		numbers.put(8, "kaheksa");
 		numbers.put(9, "üheksa");
 		
-		//TODO
-		return null;
-		/*
+		return numbers.get(number);
+		
+		/* version 1
 		switch (number) {
 		case 0:
 			return "null";
@@ -82,6 +82,7 @@ public class App {
 			throw new IllegalArgumentException("Number should be in range 0 to 9");
 		}*/
 		
+		// version 2
 //		if (number < 0 || number > 9) {
 //			throw new IllegalArgumentException("Number should be in range 0 to 9");
 //		}
