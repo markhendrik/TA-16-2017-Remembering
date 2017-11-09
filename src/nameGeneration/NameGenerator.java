@@ -25,9 +25,14 @@ public class NameGenerator {
 		return "";
 	}
 	
-	public String generateRandomName(int charNumber) {
+	// Juhuslikest tähtedest sõne etteantud tähtede arvust.
+	public String generateRandomString(int charNumber) {
 		//TODO
 		return "";
+	}
+	
+	private char getRandomChar() {
+		return 0;
 	}
 	
 	public Integer generateRandomNumberBetween(int beg, int end) {
