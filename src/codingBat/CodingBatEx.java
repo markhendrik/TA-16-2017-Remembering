@@ -72,13 +72,23 @@ public class CodingBatEx {
 	// Etteantud massiivist loetleda kokku mitu sõna algab “a” tähega.
 	//countA(["aken", "uks", "kollane"] => 1
 	public int countA(String[] strings) {
+		/* version 1
 		int count = 0;
 		for (String str : strings) {
 			if(str.substring(0, 1).equals("a")) {
 				count++;
 			}
 		}
-		return count;
+		return count; */
+		
+		//version 2
+		int count = 0;
+		for (int i = 0; i < strings.length; i++) {			
+			if(strings[i].startsWith("a")) {
+				count++;
+			}
+		}
+		return count;	
 	}
 
 }
