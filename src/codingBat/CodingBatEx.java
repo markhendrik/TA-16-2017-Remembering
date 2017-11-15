@@ -10,6 +10,7 @@ public class CodingBatEx {
 		CodingBatEx cbe = new CodingBatEx();
 
 		String[] stringArray = { "tahvel", "auk", "klass", "ahven" };
+		List<String> stringList = new ArrayList<>(Arrays.asList("maja", "tuba", "allmaaraudtee"));
 		int[] intArray = { 5, 6, 45, 99, 13, 5, 6 };
 		List<Integer> listInts = new ArrayList<>();
 		listInts.add(5);
@@ -25,7 +26,7 @@ public class CodingBatEx {
 		System.out.println("Massiiv peale muutmist " + Arrays.toString(intArray));
 
 		// elemendi väärtuse saamine
-		System.out.println("Esimene element masiivis: " + intArray[0]);
+		System.out.println("Esimene element massiivis: " + intArray[0]);
 		System.out.println("Esimene element listis: " + listInts.get(0));
 
 		/* Sublist
@@ -39,7 +40,8 @@ public class CodingBatEx {
 
 		// System.out.println(cbe.sameEnds(intArray, 2));
 		//System.out.println("countA: " + cbe.countA(stringArray));
-		System.out.println("getLessThan5: " + cbe.getLessThan5(listInts));
+//		System.out.println("getLessThan5: " + cbe.getLessThan5(listInts));
+		System.out.println("getLongestString: " + cbe.getLongestString(stringList));
 
 	}
 
@@ -100,5 +102,17 @@ public class CodingBatEx {
 			}
 		}
 		return result;
+	}
+	
+	//Leida etteantud massiivi pikim sõna.
+	// getLongestString(["uks", "aken", "lai"]) => "aken"
+	public String getLongestString(List<String> strings) {
+		String longest = "";
+		for (String str : strings) {
+			if (str.length() > longest.length()) {
+				longest = str;
+			}
+		}
+		return longest;
 	}
 }
