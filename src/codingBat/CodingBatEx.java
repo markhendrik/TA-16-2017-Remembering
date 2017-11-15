@@ -9,6 +9,7 @@ public class CodingBatEx {
 	public static void main(String[] args) {
 		CodingBatEx cbe = new CodingBatEx();
 		
+		String[] stringArray = {"tahvel", "auk", "klass", "ahven"};
 		int[] intArray = {5, 6, 45, 99, 13, 5, 6};
 		List<Integer> listInts = new ArrayList<>();
 		listInts.add(5);
@@ -36,7 +37,8 @@ public class CodingBatEx {
 		//System.out.println(Arrays.toString(cbe.subArray(intArray, 1, 3)));
 		
 		
-		System.out.println(cbe.sameEnds(intArray, 2));
+		//System.out.println(cbe.sameEnds(intArray, 2));
+		System.out.println("countA: " + cbe.countA(stringArray));
 		
 	}
 	
@@ -65,6 +67,18 @@ public class CodingBatEx {
 			index++;
 		}
 		return result;
+	}
+	
+	// Etteantud massiivist loetleda kokku mitu sõna algab “a” tähega.
+	//countA(["aken", "uks", "kollane"] => 1
+	public int countA(String[] strings) {
+		int count = 0;
+		for (String str : strings) {
+			if(str.substring(0, 1).equals("a")) {
+				count++;
+			}
+		}
+		return count;
 	}
 
 }
