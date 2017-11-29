@@ -41,7 +41,8 @@ public class CodingBatEx {
 		// System.out.println(cbe.sameEnds(intArray, 2));
 		//System.out.println("countA: " + cbe.countA(stringArray));
 //		System.out.println("getLessThan5: " + cbe.getLessThan5(listInts));
-		System.out.println("getLongestString: " + cbe.getLongestString(stringList));
+		// System.out.println("getLongestString: " + cbe.getLongestString(stringList));
+		System.out.println("is5InArray: " + cbe.is5InArray(intArray));
 
 	}
 
@@ -114,5 +115,15 @@ public class CodingBatEx {
 			}
 		}
 		return longest;
+	}
+	
+	//Tagastada tıev‰‰rtus (boolean ñ true/false), kas massiivis on nr 5.
+	public boolean is5InArray(int[] numbers) {
+		for (int number : numbers) {
+			if (number == 5) {
+				return true;
+			}
+		}
+		return false;
 	}
 }
