@@ -3,6 +3,7 @@ package codingBat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 public class CodingBatEx {
 
@@ -126,4 +127,13 @@ public class CodingBatEx {
 		}
 		return false;
 	}
+	
+	public Map<String, String> mapBully(Map<String, String> map) {
+		if (map.containsKey("a")) {
+			map.put("b", map.get("a"));
+			map.put("a", "");
+		}
+		return map;
+	}
+
 }

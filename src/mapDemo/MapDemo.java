@@ -18,6 +18,7 @@ public class MapDemo {
 		demoMap.put(2, "Kalmer");
 		demoMap.put(1, "Indrek");
 		demoMap.put(3, "Indrek");
+		demoMap.put(7, "J¸ri");
 		
 		System.out.println(demoMap);
 		
@@ -30,6 +31,23 @@ public class MapDemo {
 		
 		// Kontroll, kas vastava vıtmega paar on olemas.
 		System.out.println(demoMap.containsKey(1));
+		System.out.println("_________________________");
+		
+		// Mapi l‰bimine
+		for (Map.Entry<Integer, String> entry : demoMap.entrySet()) {
+			System.out.println("Vıti: " + entry.getKey() + " v‰‰rtus: " + entry.getValue());
+		}
+		
+		System.out.println("_________________________");
+		// Mapi kıik vıtmed.
+		System.out.println("Mapi vıtmed: " + demoMap.keySet());
+		for (Integer key : demoMap.keySet()) {
+			System.out.println(key);
+		}
+		
+		System.out.println("_________________________");
+		// Mapi kıik v‰‰rtused
+		System.out.println("Mapi v‰‰rtused: " + demoMap.values());
 		
 	}
 	
